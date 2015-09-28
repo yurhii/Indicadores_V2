@@ -12,6 +12,10 @@ and open the template in the editor.
     <body>
         <?php
         // put your code here
+        echo "Bienvenidos a este proyecto";
+        
+        
+        // des de netbeans
         ?>
     </body>
 </html>
