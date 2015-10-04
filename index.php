@@ -12,9 +12,10 @@ and open the template in the editor.
     <body>
         <?php
         // put your code here
-        echo "Bienvenidos a este proyecto";
+       echo "Instalando Codeigniter";
+       echo phpinfo();
        
-       echo "Otro titulo mas para la pruebas";
+       
         
       s
         ?>
