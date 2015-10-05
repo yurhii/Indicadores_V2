@@ -1,9 +1,7 @@
 
 <div class="panel panel-primary">
-  
   <div class="panel-body">
         <form method="POST" action="<?php echo base_url()?>consulta/checkLista">
-            
         <div style="overflow: auto; height:200px;">
             <table class="table table-bordered">  
         <?php           
