@@ -9,7 +9,7 @@ class Model_Consulta extends CI_Model {
     }
 
     public function all() {
-        $query = $this->db->get('sector');
+        $query = $this->db->get('fuenteinformacion');
         return $query->result();
     }
 
