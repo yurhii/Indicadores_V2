@@ -8,25 +8,35 @@
         <script src="<?php echo base_url('public/js/bootstrap.js') ?>"></script>    
     </head>
 
-    <body>
+    <body style="margin-bottom: 0; padding: 0;">   
+    
+    <center>
+        <img width="100%" src="<?php echo base_url()?>public/img/siar2015.jpg">
+            </center>
+    
         <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">            
-            <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-            </ul>
-          </div>
-        </div>
-        </nav>
-        
-        
-            
+            <div class="container">
+              <div class="navbar-header">
+                <ul class="nav nav-pills"> <!--<ul class="nav navbar-nav">-->
+                    <li>                       
+                        <a href="#">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Consulta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Indicadores
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>    
                 <!-- Contenido de la aplicación -->
         <div class="contenido" id="container">
             

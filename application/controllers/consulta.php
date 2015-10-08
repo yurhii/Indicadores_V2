@@ -10,14 +10,15 @@ class Consulta extends CI_Controller {
     public function index()
     {   
         $data['contenido'] = 'consulta';
-        $data['query'] = $this->Model_Consulta->all();
+        $data['listsectorapu'] = $this->Model_Consulta->listaSector();
+        $data['listsectorIndicador'] = $this->Model_Consulta->listaIndicadorSector();
 	$this->load->view('plantilla', $data);
     }    
-    public function checkLista(){
+    public function checkSector(){
         $listcheck = $this->input->post();
         
         if($listcheck){
-            print_r($listcheck['listaSector']); exit;
+            
         }
     }
 }
