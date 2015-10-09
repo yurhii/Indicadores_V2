@@ -23,10 +23,65 @@
                       </table>
                   </div> <br>
                   <center>
-                       <input type="submit" value="Mostrar Localidad y Periodo" class="btn btn-primary">
+                       <!--<input type="submit" value="Mostrar Localidad y Periodo" class="btn btn-primary">-->
                   </center>
                   </form>
+                <!--Inicio de localidad y periodo-->
                 
+                <form method="POST" action="<?php echo base_url()?>consulta/checkIndi">
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <center>SELECCIONAR LOCALIDAD(ES)</center>
+                            <div style="overflow: auto; height:200px; width: 100%;">
+                                <table class="table table-bordered">  
+                            <?php     
+
+                              foreach($listsectorIndicador as $value){          
+                            ?>
+                                    <tr>
+                                        <td>
+                                        <input type="checkbox" name="listaLocalidad[]" value="<?php echo $value->idrepterritorial; ?>"><?php echo $value->localidad; ?>
+                                        </td>                            
+                                    </tr>
+                                      <?php                              
+                                  }
+                                  ?>
+
+                                </table>
+
+                            </div> 
+                        </div>
+                        <div class="col-md-6">
+                            <center>SELECCIONAR PERIODO</center>
+                            <div style="overflow: auto; height:200px; width: 100%;">
+                                <table class="table table-bordered">  
+                          <?php     
+
+                            foreach($listsectorIndicador as $value){          
+                          ?>
+                                  <tr>
+                                      <td>
+                                      <input type="checkbox" name="listaPeriodo[]" value=""><?php echo $value->periodo; ?>
+                                      </td>                            
+                                  </tr>
+                                    <?php                              
+                                }
+                                ?>
+
+                              </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  
+                    
+                    <br>
+                  <center>
+                       <input type="submit" value="Consultar" class="btn btn-primary">
+                  </center>
+                  </form>
+                <!--FIN de localidad y periodo-->
             </div>
         </div>
     </div>
@@ -58,7 +113,6 @@
                   </form>
             </div>
           </div>
-      
   </div>
 </div>
 

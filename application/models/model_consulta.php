@@ -22,7 +22,7 @@ class Model_Consulta extends CI_Model {
     }    
     public function listaIndicadorSector(){
         $query = $this->db->query("
-            SELECT a.idformindicador, b.idrepterritorial,b.nombre, b.codigo ,c.nombre as nombreindicador, e.idfuenteinformacion, fi.nombre,
+            SELECT a.idformindicador, b.idrepterritorial,b.nombre as localidad, b.codigo ,c.nombre as nombreindicador, e.idfuenteinformacion, fi.nombre,
 	g.sigla,date_part('year',e.fechadatoini)::CHARACTER VARYING as periodo
             FROM formindicador a, repterritorial b, formula c ,formvarterri e,indicador f, unidadmedida g, fuenteinformacion fi
             WHERE a.idrepterritorial = b.idrepterritorial	
